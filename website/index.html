@@ -173,7 +173,7 @@
         <section>
 
             <h1>
-                <font>Slarmoo's Box Testing</font>
+                <font>Slarmoo's Box Testing 1.4.1</font>
                 <span id="goldboxPlant" style="display: inline; color:#62a13b"></span>
                 <!-- <span id="goldboxPlant" style="display: inline; color: var(--plant-color, var(--link-accent, #62a13b));"></span> -->
             </h1>
@@ -400,7 +400,7 @@
         "🪱",
         // I believe this is from paandorasbox (might have also been present in familiarbox???? maybe not though...)
         //slarmoo - changed to not wackybox, because it isn't :p
-        "not :wackybox:",
+        " "no more not" :wackybox:",
         // plant suggested by mel, in reference to the "(don't eat) thegubbys" meme
         "🐟",
         // blubox desktop plants 
@@ -428,6 +428,11 @@
             if ((date.getDate() >= 13 && date.getDate() <= 15) && date.getMonth() == 1) {
                 document.getElementById("goldboxPlant").innerHTML = "  " + heartPlants[(Math.floor(Math.random() * heartPlants.length))];
             }
+            //Slarmoo's Box Pi day plants
+            const PiPlants = [" Happy Pie Day!", "🥧", " 3.14952..."];
+            if ((date.getDate() >= 13 && date.getDate() <= 15) && date.getMonth() == 2) {
+                document.getElementById("goldboxPlant").innerHTML = "  " + PiPlants[(Math.floor(Math.random() * PiPlants.length))];
+	    }
         }
         if ((date.getDate() == 1) && date.getMonth() == 3) {
             document.getElementById("goldboxPlant").innerHTML = "  Censorship Update";
